@@ -403,7 +403,7 @@ func recognitionSkill(ctx *maa.Context, arg *maa.CustomRecognitionArg) {
 			action:    ActionSkill,
 			operator:  idx,
 		})
-		if idx >= 4 {
+		if idx >= 2 {
 			skillCycleIndex = 1
 		} else {
 			skillCycleIndex = idx + 1
