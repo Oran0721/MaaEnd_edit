@@ -80,14 +80,16 @@
                     "DecreaseButton": "AutoStockpile/DecreaseButton.png",
                     "Direction": "right",
                     "IncreaseButton": "AutoStockpile/IncreaseButton.png",
-                    "QuantityBox": [
-                        340,
-                        430,
-                        200,
-                        140
-                    ],
-                    "Target": 1,
-                    "ConcatAllFilteredDigits": true,
+                    "GreenMask": true,
+                    "Quantity": {
+                        "Target": 1,
+                        "Box": [
+                            360,
+                            480,
+                            100,
+                            45
+                        ]
+                    },
                     "QuantityFilter": {
                         "lower": [
                             20,

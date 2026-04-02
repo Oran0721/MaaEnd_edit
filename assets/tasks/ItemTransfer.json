@@ -321,6 +321,50 @@
                     }
                 },
                 {
+                    "name": "赤铜矿",
+                    "label": "$item.CuprumOre",
+                    "pipeline_override": {
+                        "ItemTransferClickItemCategory": {
+                            "template": "ItemTransfer/Ore.png",
+                            "next": [
+                                "ItemTransferFindItemWithOCR"
+                            ]
+                        },
+                        "ItemTransferRepoToBag": {
+                            "next": [
+                                "ItemTransferClickSortAscending",
+                                "ItemTransferClickItemCategory",
+                                "ItemTransferFindItemWithOCR"
+                            ]
+                        },
+                        "ItemTransferBagToRepo": {
+                            "next": [
+                                "ItemTransferFindItemWithOCRBag"
+                            ]
+                        },
+                        "ItemTransferBagToOriginRepo": {
+                            "next": [
+                                "ItemTransferFindItemWithOCRBagReturn"
+                            ]
+                        },
+                        "ItemTransferFindItemWithOCR": {
+                            "custom_action_param": {
+                                "item_name": "赤铜矿"
+                            }
+                        },
+                        "ItemTransferFindItemWithOCRBag": {
+                            "custom_action_param": {
+                                "item_name": "赤铜矿"
+                            }
+                        },
+                        "ItemTransferFindItemWithOCRBagReturn": {
+                            "custom_action_param": {
+                                "item_name": "赤铜矿"
+                            }
+                        }
+                    }
+                },
+                {
                     "name": "源矿",
                     "label": "$item.OriginiumOre",
                     "pipeline_override": {
@@ -1252,6 +1296,50 @@
                         "ItemTransferFindItemFallbackBagReturn": {
                             "custom_action_param": {
                                 "target_class": 108
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "赤铜瓶",
+                    "label": "$item.CuprumBottle",
+                    "pipeline_override": {
+                        "ItemTransferClickItemCategory": {
+                            "template": "ItemTransfer/Product.png",
+                            "next": [
+                                "ItemTransferFindItemWithOCR"
+                            ]
+                        },
+                        "ItemTransferRepoToBag": {
+                            "next": [
+                                "ItemTransferClickSortAscending",
+                                "ItemTransferClickItemCategory",
+                                "ItemTransferFindItemWithOCR"
+                            ]
+                        },
+                        "ItemTransferBagToRepo": {
+                            "next": [
+                                "ItemTransferFindItemWithOCRBag"
+                            ]
+                        },
+                        "ItemTransferBagToOriginRepo": {
+                            "next": [
+                                "ItemTransferFindItemWithOCRBagReturn"
+                            ]
+                        },
+                        "ItemTransferFindItemWithOCR": {
+                            "custom_action_param": {
+                                "item_name": "赤铜瓶"
+                            }
+                        },
+                        "ItemTransferFindItemWithOCRBag": {
+                            "custom_action_param": {
+                                "item_name": "赤铜瓶"
+                            }
+                        },
+                        "ItemTransferFindItemWithOCRBagReturn": {
+                            "custom_action_param": {
+                                "item_name": "赤铜瓶"
                             }
                         }
                     }
